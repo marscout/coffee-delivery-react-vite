@@ -3,6 +3,7 @@ import { Heading, Hero, HeroContent, Info } from './styles'
 import bgImg from '../../assets/background-banner.svg'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { useTheme } from 'styled-components'
+import { ListCoffees } from '../../components/ListCoffees'
 
 export function Home() {
   const theme = useTheme()
@@ -68,6 +69,8 @@ export function Home() {
 
         <img src={bgImg} id="hero-bg" alt="" />
       </Hero>
+
+      <ListCoffees />
     </div>
   )
 }
